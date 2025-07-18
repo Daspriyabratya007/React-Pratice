@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import UserCard from './Component/UserCard';
+import Counter from './Component/Counter';
+import Aleart from './Component/Aleart';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div>
+    <Counter/>
+    <Aleart/>
+  </div>
+ );
 }
 
 export default App;
+
+//  <div className="flex flex-wrap flex-col items-center gap-4 justify-center p-4 bg-gray-100 min-h-screen">
+//      <UserCard name="Priyabrata Das" description="I am Priyabrata" />
+//      <UserCard name="John Doe" description="Hi i am John Doe" />
+//      <UserCard name="Jane Smith" description="Hi i am Jane Smith " />
+//    </div>
